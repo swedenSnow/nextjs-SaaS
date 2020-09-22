@@ -2,4 +2,6 @@
 
 -   Small todo-app...
 
-## Theme ## Theme ui
+## Themes
+
+-   Theme-ui
