@@ -20,7 +20,7 @@ export async function getServerSideProps({ params, req, res }) {
     );
     if (!response.ok) {
         res.writeHead(302, {
-            Location: '/notes',
+            Location: '/',
         });
         res.end();
         return {
