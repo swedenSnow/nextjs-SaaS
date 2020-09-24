@@ -13,6 +13,9 @@ const theme = {
                 background: '#121212',
                 primary: '#1e1e1e',
                 secondary: '#17ffd1',
+                red: {
+                    9: '#fc8181',
+                },
             },
         },
     },

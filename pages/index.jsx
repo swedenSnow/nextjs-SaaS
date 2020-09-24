@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import Link from 'next/link';
 
-export default () => (
+export default ({ content }) => (
     <div sx={{ height: `calc(100vh - 108px)` }}>
         <div
             sx={{
@@ -16,10 +16,23 @@ export default () => (
                 sx={{
                     fontSize: 8,
                     my: 0,
+                    color: 'red.9',
                 }}
             >
-                This is a really dope note taking app.
+                {content.title}
             </h1>
         </div>
     </div>
 );
+
+export function getStaticProps() {
+    //! get data from cms
+
+    return {
+        props: {
+            content: {
+                title: 'This is a really dope note taking app. No really',
+            },
+        },
+    };
+}
