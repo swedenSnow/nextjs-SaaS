@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 export default ({ note }) => (
-    //! Client side
+    //! Client side rendering
     // const router = useRouter();
     // const { id } = router.query;
 
